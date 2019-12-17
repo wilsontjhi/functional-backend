@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLogic", "DomainLogic\DomainLogic.csproj", "{36336718-616B-43EA-98FB-529A24E91932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{DA095CF5-5E90-406E-A398-FE523EB30AEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36336718-616B-43EA-98FB-529A24E91932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36336718-616B-43EA-98FB-529A24E91932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36336718-616B-43EA-98FB-529A24E91932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36336718-616B-43EA-98FB-529A24E91932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA095CF5-5E90-406E-A398-FE523EB30AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA095CF5-5E90-406E-A398-FE523EB30AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA095CF5-5E90-406E-A398-FE523EB30AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA095CF5-5E90-406E-A398-FE523EB30AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
