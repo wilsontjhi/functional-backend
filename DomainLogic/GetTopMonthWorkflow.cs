@@ -1,9 +1,9 @@
-using DomainLogic.Data;
-using DomainLogic.Estimator;
+﻿using DomainLogic.Data;
+using DomainLogic.SalesDataInfo;
 
 namespace DomainLogic
 {
-    public static class GetEstimateWorkflow
+    public static class GetTopMonthWorkflow
     {
         public static string Process(string productName)
         {
@@ -11,15 +11,15 @@ namespace DomainLogic
                 productName
                     .Prepare()
                     .GetProduct()
-                    .GetEstimate()
+                    .GetTopPerformance()
                     .BuildKeySummary();
         }
 
         private static string Prepare(this string productName) => productName.ToLower();
         private static Product GetProduct(this string productName) => ProductRepository.GetProduct(productName);
-        private static float GetEstimate(this Product product) => SsaEstimator.GetEstimate(product);
-        private static string BuildKeySummary(this float estimate)
-            => $"It is estimated that next month the sales value will be ${estimate}";
+        private static SalesDatum GetTopPerformance(this Product product) => SalesDataInfoProvider.GetTopPerformance(product);
+        private static string BuildKeySummary(this SalesDatum salesDatum)
+            => $"The top performing month is {salesDatum.Month} with sales at ${salesDatum.Amount}";
     }
 
 }

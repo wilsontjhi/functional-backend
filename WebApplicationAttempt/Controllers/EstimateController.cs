@@ -1,3 +1,4 @@
+using System;
 using DomainLogic;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,6 @@ namespace WebApplicationAttempt.Controllers
 
         [HttpGet("{name}")]
         public ActionResult<string> Get(string name)
-            => GetEstimateWorkflow.Process(name);
+            => GetEstimateWorkflow.Process(name) + Environment.NewLine + GetTopMonthWorkflow.Process(name);
     }
 }

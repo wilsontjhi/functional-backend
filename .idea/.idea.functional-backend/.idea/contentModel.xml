@@ -19,6 +19,7 @@
           <e p="SsaEstimator.cs" t="Include" />
         </e>
         <e p="GetEstimateWorkflow.cs" t="Include" />
+        <e p="GetTopMonthWorkflow.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -26,11 +27,12 @@
             </e>
           </e>
         </e>
-        <e p="TopProductWorkflow.cs" t="Include" />
+        <e p="SalesDataInfo" t="Include">
+          <e p="SalesDataInfoProvider.cs" t="Include" />
+        </e>
       </e>
       <e p="DomainLogicTest" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="DataLoaderTests.cs" t="Include" />
         <e p="DomainLogicTest.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
