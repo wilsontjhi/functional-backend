@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationAttempt", "We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLogicTest", "DomainLogicTest\DomainLogicTest.csproj", "{D88303DB-4CF4-4606-8622-4C3CE083A835}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLogicExt", "DomainLogicExt\DomainLogicExt.csproj", "{3CD05AA8-E386-4CB9-A18B-24828E28A7DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D88303DB-4CF4-4606-8622-4C3CE083A835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D88303DB-4CF4-4606-8622-4C3CE083A835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D88303DB-4CF4-4606-8622-4C3CE083A835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD05AA8-E386-4CB9-A18B-24828E28A7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD05AA8-E386-4CB9-A18B-24828E28A7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD05AA8-E386-4CB9-A18B-24828E28A7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD05AA8-E386-4CB9-A18B-24828E28A7DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
