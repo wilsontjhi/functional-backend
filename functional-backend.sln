@@ -2,13 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLogic", "DomainLogic\DomainLogic.csproj", "{36336718-616B-43EA-98FB-529A24E91932}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{DA095CF5-5E90-406E-A398-FE523EB30AEA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationAttempt", "WebApplicationAttempt\WebApplicationAttempt.csproj", "{4DF76A51-2FC6-4D69-820B-CD447A2C30FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLogicTest", "DomainLogicTest\DomainLogicTest.csproj", "{D88303DB-4CF4-4606-8622-4C3CE083A835}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppForTesting", "ConsoleAppForTesting\ConsoleAppForTesting.csproj", "{ADA137CD-F82D-4349-B9AA-C72D21B63EBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +16,6 @@ Global
 		{36336718-616B-43EA-98FB-529A24E91932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36336718-616B-43EA-98FB-529A24E91932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36336718-616B-43EA-98FB-529A24E91932}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA095CF5-5E90-406E-A398-FE523EB30AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA095CF5-5E90-406E-A398-FE523EB30AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA095CF5-5E90-406E-A398-FE523EB30AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA095CF5-5E90-406E-A398-FE523EB30AEA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4DF76A51-2FC6-4D69-820B-CD447A2C30FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4DF76A51-2FC6-4D69-820B-CD447A2C30FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DF76A51-2FC6-4D69-820B-CD447A2C30FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -32,9 +24,5 @@ Global
 		{D88303DB-4CF4-4606-8622-4C3CE083A835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D88303DB-4CF4-4606-8622-4C3CE083A835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D88303DB-4CF4-4606-8622-4C3CE083A835}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ADA137CD-F82D-4349-B9AA-C72D21B63EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADA137CD-F82D-4349-B9AA-C72D21B63EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADA137CD-F82D-4349-B9AA-C72D21B63EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADA137CD-F82D-4349-B9AA-C72D21B63EBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
