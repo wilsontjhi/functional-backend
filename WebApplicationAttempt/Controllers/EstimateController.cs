@@ -1,3 +1,4 @@
+using DomainLogic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplicationAttempt.Controllers
@@ -6,10 +7,11 @@ namespace WebApplicationAttempt.Controllers
     [ApiController]
     public class EstimateController : Controller
     {
-        // GET
         public IActionResult Index()
-        {
-            return Ok(new { KeySummary = "The estimate for the upcoming month is $300." });
-        }
+            => Ok(new { KeySummary = "The estimate for the upcoming month is $300." });
+
+        [HttpGet("{name}")]
+        public ActionResult<string> Get(string name)
+            => GetEstimateWorkflow.Process(name);
     }
 }
