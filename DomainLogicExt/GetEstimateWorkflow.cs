@@ -1,6 +1,7 @@
 using DomainLogicExt.Data;
 using DomainLogicExt.Estimator;
 using LanguageExt;
+using LanguageExt.Common;
 
 namespace DomainLogicExt
 {
@@ -17,13 +18,13 @@ namespace DomainLogicExt
                     .Map(BuildKeySummary)
                     .Match(
                         keySummary => keySummary,
-                        () => "Error while getting estimate"
+                        error => $"Error while getting estimate: {error}"
                         );
         }
 
         private static string Prepare(this string productName) => productName.ToLower();
-        private static Option<Product> GetProduct(this string productName) => ProductRepository.GetProduct(productName);
-        private static Option<ProductWithData> ValidProduct(this Product product) => ProductWithData.Create(product);
+        private static Either<Error, Product> GetProduct(this string productName) => ProductRepository.GetProduct(productName);
+        private static Either<Error, ProductWithData> ValidProduct(this Product product) => ProductWithData.Create(product);
         private static float GetEstimate(this ProductWithData product) => SsaEstimator.GetEstimate(product);
         private static string BuildKeySummary(this float estimate)
             => $"It is estimated that next month the sales value will be ${estimate}";

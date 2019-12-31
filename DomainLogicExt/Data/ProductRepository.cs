@@ -5,16 +5,21 @@ using System.Data.SqlClient;
 using System.Linq;
 using Dapper;
 using LanguageExt;
+using LanguageExt.Common;
 using static LanguageExt.Prelude;
 
 namespace DomainLogicExt.Data
 {
     public static class ProductRepository
     {
-        public static Option<Product> GetProduct(string name)
+        public static Either<Error, Product> GetProduct(string name)
         {
             var salesData = GetSalesDataByProductName(name);
-            return salesData.Any() ? (Option<Product>)new Product(name, salesData) : None;
+            if (salesData.Any())
+            {
+                return new Product(name, salesData);
+            }
+            return Error.New($"Product {name} is not in the database");
         }
 
         private static IEnumerable<SalesDatum> GetSalesDataByProductName(string productName)
@@ -62,8 +67,10 @@ namespace DomainLogicExt.Data
             SalesData = product.SalesData;
         }
 
-        public static Option<ProductWithData> Create(Product product)
-            => product.SalesData.Count() > 24 ? Some(new ProductWithData(product)) : None;
+        public static Either<Error, ProductWithData> Create(Product product)
+            => product.SalesData.Count() > 24
+                ? (Either<Error, ProductWithData>)new ProductWithData(product)
+                : Error.New($"Product {product.Name} does not have enough sales data for estimation");
 
         public override string ToString()
             => $"{Name}: {Environment.NewLine} {string.Join(',', SalesData)}";
