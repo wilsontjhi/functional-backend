@@ -7,7 +7,7 @@ namespace DomainLogicExt.Estimator
 {
     public static class SsaEstimator
     {
-        public static float GetEstimate(Product product)
+        public static float GetEstimate(ProductWithData product)
         {
             return 100f;
             MLContext mlContext = new MLContext();

@@ -11,6 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\DomainLogicExt\DomainLogicExt.csproj" />
       <ProjectReference Include="..\DomainLogic\DomainLogic.csproj" />
     </ItemGroup>
 
