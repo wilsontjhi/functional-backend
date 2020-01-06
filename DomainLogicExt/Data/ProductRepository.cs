@@ -24,9 +24,9 @@ namespace DomainLogicExt.Data
 
         private static IEnumerable<SalesDatum> GetSalesDataByProductName(string productName)
         {
-            using (IDbConnection db = new SqlConnection("Server=127.0.0.1,1433; Database=functional; User Id=SA; Password=yourStrong(!)Password; Connection Timeout=60"))
+            using (IDbConnection db = new SqlConnection("Server= localhost\\sqlexpress; Database= functional; Integrated Security=True;"))
             {
-                return db.Query<SalesDatum>($"SELECT [month], [amount] FROM [functional].[sales] WHERE [product] = '{productName}'").ToList();
+                return db.Query<SalesDatum>($"SELECT [month], [amount] FROM [sales] WHERE [product] = '{productName}'").ToList();
             }
         }
 

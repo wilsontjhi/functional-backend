@@ -9,7 +9,6 @@ namespace DomainLogicExt.Estimator
     {
         public static float GetEstimate(ProductWithData product)
         {
-            return 100f;
             MLContext mlContext = new MLContext();
             IDataView dataView = mlContext.Data.LoadFromEnumerable(product.SalesData);
 
